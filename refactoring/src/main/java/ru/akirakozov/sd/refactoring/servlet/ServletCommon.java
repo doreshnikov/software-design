@@ -18,15 +18,17 @@ import ru.akirakozov.sd.refactoring.servlet.DBHandler;
  * @author volhovm
  */
 public class ServletCommon {
+
     public static void dumpItems(HttpServletResponse response, ResultSet rs, String title)
-        throws IOException, SQLException {
-        response.getWriter().println("<html><body>")                         ;
-        response.getWriter().println("<h1>" + title + ": </h1>")             ;
-        while (rs.next())                                                    {
-            String name = rs.getString("name")                               ;
-            int price  = rs.getInt("price")                                  ;
-            response.getWriter().println(name + "\t" + price + "</br>")      ;}
-        response.getWriter().println("</body></html>")                       ;
+            throws IOException, SQLException {
+        response.getWriter().println("<html><body>");
+        response.getWriter().println("<h1>" + title + ": </h1>");
+        while (rs.next()) {
+            String name = rs.getString("name");
+            int price = rs.getInt("price");
+            response.getWriter().println(name + "\t" + price + "</br>");
+        }
+        response.getWriter().println("</body></html>");
     }
 
     public static void doGoodies(HttpServletResponse response, DBHandler<Statement> handler) {
@@ -43,4 +45,5 @@ public class ServletCommon {
         response.setContentType("text/html");
         response.setStatus(HttpServletResponse.SC_OK);
     }
+
 }

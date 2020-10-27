@@ -8,5 +8,7 @@ import java.sql.SQLException;
  */
 @FunctionalInterface
 public interface DBHandler<T> {
+
     void apply(T t) throws SQLException, IOException;
+
 }

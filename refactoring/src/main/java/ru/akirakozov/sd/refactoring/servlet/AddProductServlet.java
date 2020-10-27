@@ -17,19 +17,20 @@ import ru.akirakozov.sd.refactoring.servlet.*;
 public class AddProductServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest request,
-                         HttpServletResponse response) throws IOException {
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String name = request.getParameter("name");
         long price = Long.parseLong(request.getParameter("price"));
 
         ServletCommon.doGoodies(
-            response,
-            (Statement stmt) -> {
-                String sql = "INSERT INTO PRODUCT " +
-                    "(NAME, PRICE) VALUES (\"" + name + "\"," + price + ")";
-                stmt.executeUpdate(sql);
-            });
+                response,
+                (Statement stmt) -> {
+                    String sql = "INSERT INTO PRODUCT " +
+                            "(NAME, PRICE) VALUES (\"" + name + "\"," + price + ")";
+                    stmt.executeUpdate(sql);
+                }
+        );
 
         response.getWriter().println("OK");
     }
+
 }
