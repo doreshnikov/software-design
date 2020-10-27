@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/lru_cache" />
+            <option value="$PROJECT_DIR$/vk_fetcher" />
           </set>
         </option>
       </GradleProjectSettings>
