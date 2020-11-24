@@ -1,15 +1,15 @@
-package controller
+package app.controller
 
-import dao.TaskListRepository
-import model.TaskStatus
+import app.dao.TaskListRepository
+import app.model.TaskStatus
 import org.springframework.beans.factory.annotation.Autowired
+import org.springframework.stereotype.Controller
 import org.springframework.ui.Model
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestParam
-import org.springframework.web.bind.annotation.RestController
 
-@RestController
+@Controller
 class TaskListController(
     @Autowired private val repository: TaskListRepository
 ) {
@@ -21,15 +21,14 @@ class TaskListController(
     }
 
     @GetMapping("/task_list")
-    fun getTaskList(model: Model, @RequestParam todoListId: Long): String {
-        model.addAttribute("task_lists", listOf(repository.selectTaskList(todoListId)))
+    fun getTaskList(model: Model, @RequestParam taskListId: Long): String {
+        model.addAttribute("task_lists", listOf(repository.selectTaskList(taskListId)))
         return "index"
     }
 
     @PostMapping("/task_list_put")
     fun putTaskList(@RequestParam title: String): String {
         repository.insertTaskList(title)
-        println(title)
         return "redirect:/task_lists"
     }
 

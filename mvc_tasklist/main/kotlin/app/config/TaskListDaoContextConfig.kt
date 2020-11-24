@@ -1,7 +1,7 @@
-package config
+package app.config
 
-import dao.TaskListMemoryRepository
-import dao.TaskListRepository
+import app.dao.TaskListMemoryRepository
+import app.dao.TaskListRepository
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 

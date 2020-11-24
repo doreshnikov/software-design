@@ -1,4 +1,4 @@
-package model
+package app.model
 
 data class TaskList(
     val id: Long,

@@ -1,8 +1,8 @@
-package dao
+package app.dao
 
-import model.Task
-import model.TaskList
-import model.TaskStatus
+import app.model.Task
+import app.model.TaskList
+import app.model.TaskStatus
 
 interface TaskListRepository {
 
