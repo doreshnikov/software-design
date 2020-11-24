@@ -1,6 +1,5 @@
-import client.VkApiConfig
 import client.AsyncVkClient
-import java.time.Instant
+import client.VkApiConfig
 
 suspend fun main(args: Array<String>) {
 
@@ -15,14 +14,6 @@ suspend fun main(args: Array<String>) {
     val config = VkApiConfig("main/resources")
     val client = AsyncVkClient(config)
 
-    print("Last $hoursBefore hours search results for '#$hashTag':\n")
-    val counts = App(client).requestPostCountsOnce(hashTag, Instant.now(), hoursBefore)
-
-    counts.forEachIndexed { i, count ->
-        val hours = (i - hoursBefore).toString().padStart(3)
-        print("$hours: $count\n")
-    }
-
-    println("Total count: ${counts.sum()}")
+    App(client).run(hashTag, hoursBefore)
 
 }

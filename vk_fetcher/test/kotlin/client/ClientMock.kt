@@ -35,8 +35,7 @@ object ClientMock {
                 "&start_time=${from.toSeconds()}" +
                 "&end_time=${until.toSeconds()}"
 
-
-    /*@Test
+    @Test
     fun testMockClient() = runBlocking {
         val mock = Mockito.mock(AsyncHttpClient::class.java)
         val now = Instant.now()
@@ -46,20 +45,14 @@ object ClientMock {
                 mock.get(query(now.beforeHours(i), now))
             ).thenReturn("{\"response\":{\"total_count\":$i}}")
         }
-        val client = object : AsyncHttpClient by mock, VkClient by AsyncVkClient(config) {
-            override val client: HttpClient
-                get() = mock.client
-
-            override fun close() {
-                client.close()
-            }
+        val client = object : VkClient by AsyncVkClient(config), AsyncHttpClient by mock {
+            override fun close() {}
         }
 
         for (i in 1L..10L) {
             assertEquals(client.requestPostsCount("hash", now, now.beforeHours(i)), VkResponse(i))
-            print("${client.requestPostsCount("hash", now.beforeHours(i), now)}\n")
         }
-    }*/
+    }
 
     @Test
     fun testMockApp() = runBlocking {
