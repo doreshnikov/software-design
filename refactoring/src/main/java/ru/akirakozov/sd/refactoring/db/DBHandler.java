@@ -1,4 +1,4 @@
-package ru.akirakozov.sd.refactoring.servlet;
+package ru.akirakozov.sd.refactoring.db;
 
 import java.io.IOException;
 import java.sql.SQLException;

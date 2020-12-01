@@ -9,8 +9,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/lru_cache" />
-            <option value="$PROJECT_DIR$/vk_fetcher" />
+            <option value="$PROJECT_DIR$/graph_bridge" />
+            <option value="$PROJECT_DIR$/translator" />
           </set>
         </option>
       </GradleProjectSettings>

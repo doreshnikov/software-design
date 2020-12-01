@@ -9,8 +9,6 @@ import java.awt.Color
 import java.awt.Graphics2D
 import java.awt.geom.Ellipse2D
 import java.awt.geom.Line2D
-import kotlin.math.PI
-import kotlin.math.atan2
 
 class AWTVisualizer(
     private val g2: Graphics2D,

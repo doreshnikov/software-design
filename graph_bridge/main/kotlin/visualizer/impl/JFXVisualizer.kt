@@ -7,8 +7,6 @@ import javafx.scene.text.Text
 import visualizer.ActionType
 import visualizer.Visualizer
 import visualizer.data.Point
-import kotlin.math.PI
-import kotlin.math.atan2
 
 class JFXVisualizer(
     private val canvas: Canvas,

@@ -6,3 +6,7 @@ gradlew
 gradlew.bat
 
 local.properties
+
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/

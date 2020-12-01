@@ -1,7 +1,5 @@
 package ru.akirakozov.sd.refactoring.servlet;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Connection;
@@ -9,10 +7,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.ResultSet;
-import java.lang.Void;
-import java.util.function.*;
 
-import ru.akirakozov.sd.refactoring.servlet.DBHandler;
+import ru.akirakozov.sd.refactoring.db.DBHandler;
 
 /**
  * @author volhovm
