@@ -20,7 +20,7 @@ class ExtendedClock(
 
     override fun now(): Instant = lock.read {
         val startedTime = startedAt ?: return@read localTime
-        return@read localTime + Duration.between(startedTime, Instant.now())
+        localTime + Duration.between(startedTime, Instant.now())
     }
 
     fun start() = lock.write {

@@ -10,6 +10,11 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/event-clock" />
+            <option value="$PROJECT_DIR$/graph_bridge" />
+            <option value="$PROJECT_DIR$/lru_cache" />
+            <option value="$PROJECT_DIR$/mvc_tasklist" />
+            <option value="$PROJECT_DIR$/translator" />
+            <option value="$PROJECT_DIR$/vk_fetcher" />
           </set>
         </option>
       </GradleProjectSettings>
