@@ -2,9 +2,15 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="15">
+      <module name="software-design.graph_bridge" target="11" />
+      <module name="software-design.graph_bridge.main" target="11" />
+      <module name="software-design.graph_bridge.test" target="11" />
       <module name="software-design.mvc_tasklist" target="11" />
       <module name="software-design.mvc_tasklist.main" target="11" />
       <module name="software-design.mvc_tasklist.test" target="11" />
+      <module name="software-design.translator" target="11" />
+      <module name="software-design.translator.main" target="11" />
+      <module name="software-design.translator.test" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
