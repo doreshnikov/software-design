@@ -1,10 +1,10 @@
 rootProject.name = "software-design"
 
 include(
-    "lru_cache",
-    "vk_fetcher",
-    "mvc_tasklist",
-    "graph_bridge",
+    "lru-cache",
+    "vk-fetcher",
+    "mvc-tasklist",
+    "graph-bridge",
     "translator",
     "event-clock"
 )

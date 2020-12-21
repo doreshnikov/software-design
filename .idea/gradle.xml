@@ -4,17 +4,19 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="delegatedBuild" value="true" />
+        <option name="testRunner" value="GRADLE" />
         <option name="distributionType" value="WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/event-clock" />
-            <option value="$PROJECT_DIR$/graph_bridge" />
-            <option value="$PROJECT_DIR$/lru_cache" />
-            <option value="$PROJECT_DIR$/mvc_tasklist" />
+            <option value="$PROJECT_DIR$/graph-bridge" />
+            <option value="$PROJECT_DIR$/lru-cache" />
+            <option value="$PROJECT_DIR$/mvc-tasklist" />
             <option value="$PROJECT_DIR$/translator" />
-            <option value="$PROJECT_DIR$/vk_fetcher" />
+            <option value="$PROJECT_DIR$/vk-fetcher" />
           </set>
         </option>
       </GradleProjectSettings>
