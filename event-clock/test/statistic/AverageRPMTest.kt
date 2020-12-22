@@ -91,8 +91,10 @@ class AverageRPMTest {
     @org.junit.jupiter.api.Test
     fun moreThanHourForgetTest() {
         statistic.incrementEvent("event1")
+        statistic.incrementEvent("event2")
         clock += Duration.ofSeconds(1)
         statistic.incrementEvent("event2")
+        statistic.incrementEvent("event3")
         clock += Duration.ofSeconds(59)
         statistic.incrementEvent("event3")
         clock += Duration.ofMinutes(59)
@@ -101,7 +103,7 @@ class AverageRPMTest {
         compare(
             mapOf(
                 "event2" to 1.0 / 60,
-                "event3" to 1.0 / 60,
+                "event3" to 2.0 / 60,
                 "event4" to 1.0 / 60
             )
         )

@@ -15,6 +15,7 @@
             <option value="$PROJECT_DIR$/graph-bridge" />
             <option value="$PROJECT_DIR$/lru-cache" />
             <option value="$PROJECT_DIR$/mvc-tasklist" />
+            <option value="$PROJECT_DIR$/profiler-aspectj" />
             <option value="$PROJECT_DIR$/translator" />
             <option value="$PROJECT_DIR$/vk-fetcher" />
           </set>
