@@ -11,13 +11,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/event-clock" />
-            <option value="$PROJECT_DIR$/graph-bridge" />
-            <option value="$PROJECT_DIR$/lru-cache" />
-            <option value="$PROJECT_DIR$/mvc-tasklist" />
-            <option value="$PROJECT_DIR$/profiler-aspectj" />
-            <option value="$PROJECT_DIR$/translator" />
-            <option value="$PROJECT_DIR$/vk-fetcher" />
+            <option value="$PROJECT_DIR$/actors" />
+            <option value="$PROJECT_DIR$/reactive" />
           </set>
         </option>
       </GradleProjectSettings>

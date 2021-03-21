@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel target="15">
+      <module name="refactoring" target="1.8" />
       <module name="software-design.graph-bridge" target="11" />
       <module name="software-design.graph-bridge.main" target="11" />
       <module name="software-design.graph-bridge.test" target="11" />
@@ -13,6 +14,9 @@
       <module name="software-design.mvc_tasklist" target="11" />
       <module name="software-design.mvc_tasklist.main" target="11" />
       <module name="software-design.mvc_tasklist.test" target="11" />
+      <module name="software-design.profiler-aspectj" target="1.8" />
+      <module name="software-design.profiler-aspectj.main" target="1.8" />
+      <module name="software-design.profiler-aspectj.test" target="1.8" />
       <module name="software-design.translator" target="11" />
       <module name="software-design.translator.main" target="11" />
       <module name="software-design.translator.test" target="11" />
