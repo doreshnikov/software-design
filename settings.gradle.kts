@@ -8,9 +8,9 @@ include(
 //    "translator",
 //    "profiler-aspectj",
 //    "event-clock",
-    "actors",
-    "reactive"
+//    "actors",
+//    "reactive",
+    "event-sourcing"
 )
 
 enableFeaturePreview("GRADLE_METADATA")
-include("reactive")

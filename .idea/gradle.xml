@@ -11,8 +11,29 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/actors" />
-            <option value="$PROJECT_DIR$/reactive" />
+            <option value="$PROJECT_DIR$/event-sourcing" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/containers/client" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/containers" />
+            <option value="$PROJECT_DIR$/containers/client" />
+            <option value="$PROJECT_DIR$/containers/market" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/containers/market" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/containers" />
+            <option value="$PROJECT_DIR$/containers/client" />
+            <option value="$PROJECT_DIR$/containers/market" />
           </set>
         </option>
       </GradleProjectSettings>
